@@ -4,6 +4,23 @@ A small suite of self-contained web utilities behind a shared account system.
 
 **Stack** — VB.NET · ASP.NET WebForms · Entity Framework · SQL Server
 
+
+## Status
+
+*Verified 28 Aug 2026 — builds with 0 errors; `Default.aspx` served HTTP 200 under IIS Express.*
+
+**Working**
+- Landing page renders
+- `Users` and `PasswordResetTokens` schema applies cleanly — hashed passwords, verification tokens,
+  expiring single-use reset tokens, last-login tracking
+
+**Not built**
+- This is the least complete project here. The account schema and data layer are in place, but the
+  tools the app is named for are not built out, and the landing page is close to empty.
+
+Kept public because the token lifecycle in the data layer is worth reading. Treat it as an
+early sketch, not a working product.
+
 ## Account handling
 
 `Users` and `PasswordResetTokens` — registration with hashed passwords, email verification tokens,
